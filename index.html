@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Template using a fullpage.js plugin</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                sectionsColor: ['#C09F7B','#CB8E4C', '#C09F7B', '#CB8E4C']
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+      .myContent{
+        min-height: 300px;
+        overflow: auto;
+      }
+      .row{width:!100%;height:auto;margin:30px;float:left;}
+      .splitLeft{
+        height:auto;
+        width:25%;
+        float:left;
+      }
+      .splitRight{
+        height:auto;
+        width:75%;
+        /*background-color: grey;*/
+        float:left;
+      }
+      .imageBox{
+        width:100%;
+        height:300px;
+        background-color: #fff;
+		object-fit: cover;
+
+      }
+		h3{
+			 font-size: 28px
+		}
+		
+      p{
+		
+        font-size: 28px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+    </style>
+
+</head>
+<body>
+  <ul id="menu"><!-- menu items -->
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li>
+      <!-- add another li element to create a new menu tab -->
+  </ul>
+
+<div id="fullpage">
+    <!-- section starts -->
+    <div class="section" id="section0">
+       <div class="myContent">
+          <h1>Networks of Wellington street</h1>
+		
+        </div>
+		   <h3>In the city of wellington, the Networks infrastructures is all around the street. Even we using them and walk through them everyday, is still hard to noticed them. This is a page that a part of networks infrastructures on the street of Wellington.</h3>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section1">
+        <div class="slide" id="slide1"><!-- horizontal slide -->
+          <div class="myContent">
+              <h1> Street Markings </h1>
+			
+            </div>
+			  <h3>Street marking shows how all the underground cables or pipeline lay out. The way it shows it own langrage just by drawing some colorful lines on the street. Different color representing different things.</h3>
+        </div>
+        <div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1>
+				<img src="img/Cables color.jpg" width="350">
+	
+			</h1>
+			<h3>This is the meanings of differethe color street marking meanings in Wellington from a cable locate marking canpany in Wellington city. </h3>
+        </div>
+		<div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1>
+				<img src="img/3.jpg" width="300"> <img src="img/4.jpg" width="300"></h1>
+			
+			<h3>The orange line presenting the electric and lighting cables, the line jioning together into a street pole. If you look up to the top, you can see a lot cables on the top of the pole.The electric will be sending to each palce through those cables.   </h3>
+        </div>
+		<div class="slide" id="slide2"><!-- second horizontal slide -->
+
+            <h1>
+				<img src ="img/1.jpg"  width="300">
+
+			</h1>
+			<h3>These different colours cables meet at one palce, the lines and arrowshead piont the dicrection of the cables. </h3>
+        </div>
+       </div>
+	
+
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section2">
+        <div class="myContent">
+          <h1>The Manhole Covers</h1>
+          <h3>Some Manhole covers connected with Networks of the city,and these networks are belong to some Network company. </h3>
+        </div>
+    </div>
+    <!-- section ends -->
+    <!-- section starts -->
+    <div class="section fp-auto-height" id="section3">
+        <div class="myContent">
+
+          <!-- row starts -->
+          <div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->s
+              <!--<div class="imageBox">-->
+                <!-- img goes here -->
+                <h2><img src = "img/Danger copy.jpg" width="350
+					"></h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+               This manwhole cover is made by Transnet Nz Ltd. 
+            Transnet Nz Limited was founded in 2000. The company is sale the distribution of electrical apparatus and equipment wiring supplies in New Zealand.
+
+              </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+			
+			<div class="row">
+            <div class="splitLeft"><!-- left div with 25% -->
+              <!--<div class="imageBox">-->
+              
+               <img src="img/Chorus.jpg" width="350"> <!--replace with <img src="img/imagename.jpg"> tags -->
+              </div>
+            </div>
+            <div class="splitRight"><!-- right div with 75% -->
+              <p><!-- paragraph -->
+                Chorus is a provider of telecommunications infrastructure throughout New Zealand. This Company listed on the NZX stock exchange and is in the NZX 50 Index. Chorus is the owner of the majority of telephone lines and exchange equipment in New Zealand.
+              </p>
+            </div><!-- right section ends -->
+          </div>
+          <!-- row ends -->
+        </div>
+		
+    </div>
+    <!-- section ends -->
+	
+	
+</div>
+
+</body>
+</html>
